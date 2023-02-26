@@ -1,0 +1,12 @@
+SharedView Model
+
+Its a regular view model class sharing its instance with mulitple ViewModel.
+
+Normal View Model
+When we instatinate the regular view model in a fragment,Its often scoped to lifecycle of the fragment.
+By scoping it to single Fragment we cannot share Data with Multiple fragments.
+
+To share the data between ViewModel and Mulitple fragment we need to instatinate viewmodel with activity.
+Using this concept we can share the multiple instance of the same view model to different fragments.
+
+
