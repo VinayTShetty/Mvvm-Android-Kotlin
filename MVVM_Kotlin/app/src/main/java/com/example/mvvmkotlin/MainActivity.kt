@@ -19,16 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-         navController = navHostFragment.navController
-
-
-     //   navController = findNavController(R.id.fragmentContainerView)
-    //    navController=findNavController(R.id.fragmentContainerView)
-        /**
-         * This is used to navigate back to FrsitFragment from SecondFragment.
-         */
-
-     //   Navigation.setViewNavController(fab, navController)
+        navController = navHostFragment.navController
         setupActionBarWithNavController(navController)
     }
 
